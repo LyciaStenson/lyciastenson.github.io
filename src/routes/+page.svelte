@@ -6,7 +6,7 @@
 
 <div class="space-y-5 pt-4 p-8 text-black dark:text-white">
 	<p class="text-xl">
-		Hi, I'm Lycia.
+		Hi, I'm a game programmer with an interest in gameplay and graphics programming.
 	</p>
 	<h1 class="pb-6 text-3xl font-bold">
 		My Projects
