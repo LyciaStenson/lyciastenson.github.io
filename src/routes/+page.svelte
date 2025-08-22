@@ -4,7 +4,7 @@
 
 <title>Lycia Stenson | Game Programmer</title>
 
-<div class="pt-4 p-8">
+<div class="pt-4 p-8 text-black dark:text-white">
 	<h1 class="pb-6 text-3xl font-bold">
 		My Projects
 	</h1>

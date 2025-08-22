@@ -3,9 +3,13 @@
 	let { children } = $props();
 </script>
 
-<div class="flex flex-col min-h-screen">
+<div class="flex flex-col min-h-screen bg-white dark:bg-stone-950 text-black dark:text-white">
 	<header class="border-b-2 border-gray-400 p-4">
-		<h1>Lycia Stenson | Game Programmer</h1>
+		<h1>
+			<a href="/">
+				Lycia Stenson | Game Programmer
+			</a>
+		</h1>
 	</header>
 	
 	<main class="flex-1">
@@ -13,6 +17,6 @@
 	</main>
 	
 	<footer class="border-t-2 border-gray-400 text-center p-4">
-		<h1>&copy; Lycia Stenson 2025</h1>
+		<h1>&copy; 2025 Lycia Stenson</h1>
 	</footer>
 </div>
