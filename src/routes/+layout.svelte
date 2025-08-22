@@ -4,7 +4,7 @@
 </script>
 
 <div class="flex flex-col min-h-screen bg-white dark:bg-stone-950 text-black dark:text-white">
-	<header class="border-b-2 border-gray-400 p-4">
+	<header class="text-lg p-6 border-b-2 border-gray-400">
 		<h1>
 			<a href="/">
 				Lycia Stenson | Game Programmer

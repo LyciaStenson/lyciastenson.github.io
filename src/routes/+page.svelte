@@ -4,7 +4,10 @@
 
 <title>Lycia Stenson | Game Programmer</title>
 
-<div class="pt-4 p-8 text-black dark:text-white">
+<div class="space-y-5 pt-4 p-8 text-black dark:text-white">
+	<p class="text-xl">
+		Hi, I'm Lycia.
+	</p>
 	<h1 class="pb-6 text-3xl font-bold">
 		My Projects
 	</h1>
