@@ -11,7 +11,11 @@
 >
 	<h2 class="text-3xl font-semibold">{title}</h2>
 	<div class="space-y-4">
-		<p class="text-lg">{description}</p>
-		<p>{details}</p>
+		<p class="text-lg">
+			{description}
+		</p>
+		<p class="text-md">
+			{details}
+		</p>
 	</div>
 </a>
