@@ -2,8 +2,6 @@
 	import { onMount } from "svelte";
 	import { browser } from "$app/environment";
 	
-	export let gameName: string;
-	export let author: string;
 	export let gameId: string;
 
 	let isDark: boolean = false;

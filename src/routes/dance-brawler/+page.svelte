@@ -9,5 +9,5 @@
 		Dance Brawler
 	</h1>
 	
-	<ItchEmbed gameName="dancebrawler" author="smallbagopeas" gameId="3577174" />
+	<ItchEmbed gameId="3577174" />
 </div>
