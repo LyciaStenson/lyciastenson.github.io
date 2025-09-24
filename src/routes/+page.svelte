@@ -8,6 +8,7 @@
 	<p class="text-xl">
 		Hi, I'm a graduate game programmer with an interest in gameplay and graphics programming. I love investigating problems and finding solutions to them.
 	</p>
+	
 	<h1 class="pb-6 text-3xl font-bold">
 		My Game Programming Projects
 	</h1>
