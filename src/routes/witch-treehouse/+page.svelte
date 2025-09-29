@@ -5,7 +5,7 @@
 		Witch Treehouse Diorama
 	</h1>
 
-	<video src="/videos/witch-treehouse/turnaround.mp4" autoplay muted loop playsinline controls width="800" class="rounded-xl shadow-lg">
+	<video src="/witch-treehouse/turnaround.mp4" autoplay muted loop playsinline controls width="800" class="rounded-xl shadow-lg">
 		<track kind="captions" />
 	</video>
 </div>
