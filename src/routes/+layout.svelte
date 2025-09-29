@@ -4,7 +4,7 @@
 </script>
 
 <div class="flex flex-col min-h-screen bg-white dark:bg-stone-950 text-black dark:text-white">
-	<header class="sticky top-0 z-50 text-lg p-6 border-b-2 border-stone-400 bg-white">
+	<header class="sticky top-0 z-50 text-lg p-6 border-b-2 border-stone-400 bg-white dark:bg-stone-950">
 		<h1>
 			<a href="/">
 				Lycia Stenson | Game Programmer
