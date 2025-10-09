@@ -7,10 +7,10 @@
 <div class="space-y-6 p-8 text-black dark:text-white">
 	<div class="space-y-4">
 		<p class="text-xl">
-			Hi, I'm a graduate game programmer with an interest in gameplay and graphics programming. I love investigating problems and finding solutions to them.
+			Hi, I'm a graduate game programmer focused on gameplay, graphics, and engine programming. Enjoys investigating problems and developing efficient solutions that improve designers&apos; workflows, with experience in Unreal, Unity, and Godot, and currently building a custom engine in C++ with Vulkan.
 		</p>
 		<p class="text-xl">
-			Take a look at my favourite projects below
+			Take a look at my favourite projects below.
 		</p>
 	</div>
 	
@@ -32,5 +32,6 @@
 	
 	<div class="flex flex-wrap justify-center gap-6">
 		<ProjectCard title="Portfolio Website" description="Using some past experience with NextJS, I decided to build my portfolio website using SvelteKit." details="While my focus and passion is game development, I like to branch out into other areas of programming too." link="/"></ProjectCard>
+		<ProjectCard title="Nightbird Website" description="I built the website for Nightbird Engine." details="Also using SvelteKit, the Nightbird website allowed me to develop skills designing websites with a modern appearance." link="https://nightbirdengine.github.io/"></ProjectCard>
 	</div>
 </div>
