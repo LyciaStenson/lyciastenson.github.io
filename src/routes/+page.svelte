@@ -24,6 +24,7 @@
 		<ProjectCard title="Dance Brawler" description="A rhythm game disguised as a fighting game." details="As the gameplay programmer on the team, my primary responsiblity was to develop the note system." link="/dance-brawler"></ProjectCard>
 		<ProjectCard title="Boid Flocking" description="A boid flocking simulation developed in Unreal Engine." details="I used C++ with Unreal Engine to develop the simulation. I utilised Unreal's Instanced Static Mesh Component to increase performance with hundreds of boids." link="/boid-flocking"></ProjectCard>
 		<ProjectCard title="3D Platformer" description="A 3D Mario-like platformer." details="A 3D platformer inspired by Super Mario 3D World, developed in Godot as a showcase of game feel for a university taster session." link="/3d-platformer"></ProjectCard>
+		<ProjectCard title="Doctor Who" description="Gameplay prototypes built in Godot" details="Portal system for bigger-on-the-inside TARDIS, weeping angels that move only when not in view." link="/doctor-who"></ProjectCard>
 	</div>
 
 	<h1 class="pb-6 text-3xl font-bold">
