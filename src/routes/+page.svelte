@@ -19,7 +19,7 @@
 	</h1>
 	
 	<div class="flex flex-wrap justify-center gap-6">
-		<ProjectCard title="Nightbird Engine" description="A custom game engine with Vulkan rendering." details="The engine includes 3D rendering with Vulkan, and an editor which can be used to browser assets, save and load scenes, and create and orient objects in the scene." link="/nightbird"></ProjectCard>
+		<ProjectCard title="Nightbird Engine" description="A custom game engine with Vulkan rendering." details="The engine includes 3D rendering with Vulkan, and an editor which can be used to browse assets, save and load scenes, and create and orient objects in the scene." link="/nightbird"></ProjectCard>
 		<ProjectCard title="Witch Treehouse" description="A shader diorama written in C++ with OpenGL." details="Features shadow mapping and a Blinn-Phong lighting model." link="/witch-treehouse"></ProjectCard>
 		<ProjectCard title="Dance Brawler" description="A rhythm game disguised as a fighting game." details="As the gameplay programmer on the team, my primary responsiblity was to develop the note system." link="/dance-brawler"></ProjectCard>
 		<ProjectCard title="Boid Flocking" description="A boid flocking simulation developed in Unreal Engine." details="I used C++ with Unreal Engine to develop the simulation. I utilised Unreal's Instanced Static Mesh Component to increase performance with hundreds of boids." link="/boid-flocking"></ProjectCard>
