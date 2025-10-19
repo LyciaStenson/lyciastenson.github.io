@@ -25,11 +25,12 @@
 		</div>
 		<div class="space-y-0">
 			<p class="text-lg">
-				Visual Parameters
+				Aesthetic Parameters
 			</p>
 			<ul class="list-disc pl-8">
 				<li>Presence of trailing cloud particles</li>
 				<li>Speed threshold to spawn trailing particles</li>
+				<li>Presence of sound including running, jump, and double jump sound effects</li>
 			</ul>
 		</div>
 		<p>
