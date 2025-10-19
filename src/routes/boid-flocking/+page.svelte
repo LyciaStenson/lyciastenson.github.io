@@ -1,7 +1,7 @@
 <title>Nightbird Engine | Lycia Stenson</title>
 
 <div class="p-8 space-y-5">
-	<h1 class="text-3xl font-bold">
+	<h1 class="text-4xl font-bold">
 		Boid Flocking
 	</h1>
 
