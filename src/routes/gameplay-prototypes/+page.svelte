@@ -63,11 +63,7 @@
 	
 	<div class="space-y-3">
 		<p class="text-lg">
-			A 3D platformer inspired by Super Mario 3D World, developed in Godot as a showcase of game feel for a university taster session.
-		</p>
-		
-		<p class="text-lg">
-			The students could tweak various parameters to get a sense for how they affect the feel of the character, and explore a simple platformer environment I build out of transformed rock models.
+			A Doctor Who-inspired gameplay demo featuring a &apos;Weeping Angel&apos; that only moves when not in the player's view, and a TARDIS which appears bigger-on-the-inside through a portal system.
 		</p>
 	</div>
 	
@@ -77,11 +73,11 @@
 	
 	<div class="space-y-3">
 		<p class="text-lg">
-			The player controls a &apos;LIDAR scanner&apos; to place points on an invisible environment
+			The player uses a &apos;LIDAR scanner&apos; to place points in an invisible environment, allowing them to discern the geometry.
 		</p>
 		
-		<p class="text-lg">
-			This project was developed as a
-		</p>
+		<video src="/lidar/demo.mp4" autoplay muted loop playsinline controls width="600" class="rounded-xl shadow-lg">
+			<track kind="captions" />
+		</video>
 	</div>
 </div>
