@@ -2,7 +2,7 @@
 
 <div class="p-8 md:px-18 md:py-14 space-y-5">
 	<h1 class="text-5xl font-bold">
-		3D Platformer
+		Game Feel Demo
 	</h1>
 	
 	<div class="space-y-3">
@@ -21,7 +21,7 @@
 			<p class="text-lg">
 				Movement parameters:
 			</p>
-			<ul class="list-disc pl-8">
+			<ul class="list-disc pl-8 space-y-1">
 				<li>Acceleration</li>
 				<li>Jump Height</li>
 				<li>Time to reach apex</li>
@@ -32,7 +32,7 @@
 			<p class="text-lg">
 				Aesthetic Parameters
 			</p>
-			<ul class="list-disc pl-8">
+			<ul class="list-disc pl-8 space-y-1">
 				<li>Presence of trailing cloud particles</li>
 				<li>Speed threshold to spawn trailing particles</li>
 				<li>Presence of sound including running, jump, and double jump sound effects</li>
@@ -42,7 +42,7 @@
 			<p class="text-lg">
 				Asset Credits
 			</p>
-			<ul class="list-disc pl-8">
+			<ul class="list-disc pl-8 space-y-1">
 				<li><a class="font-bold" href="https://github.com/gdquest-demos/godot-4-3D-Characters">GDQuest's</a> Godot-themed Sophia character with included movement animations</li>
 				<li><a class="font-bold" href="https://github.com/RPicster/godot4-demo-desert-light/tree/main">Raffaele Picca's</a> rock terrain models to build out the level</li>
 			</ul>
