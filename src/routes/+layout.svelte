@@ -13,7 +13,7 @@
 	</header>
 	
 	<main class="flex-1">
-		<div class="max-w-7xl mx-auto w-full px-4">
+		<div class="p-4 sm:p-8 md:px-18 md:py-14 max-w-7xl mx-auto w-full">
 			{@render children()}
 		</div>
 	</main>

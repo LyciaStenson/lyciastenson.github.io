@@ -1,6 +1,6 @@
 <title>Web Development | Lycia Stenson</title>
 
-<div class="p-8 md:px-18 md:py-14 space-y-5">
+<div class="space-y-5">
 	<h1 class="text-5xl font-bold">
 		Web Development
 	</h1>
