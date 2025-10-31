@@ -26,5 +26,13 @@
 	$: iframeSrc = `https://itch.io/embed/${gameId}${isDark ? '/?dark=true' : ''}`;
 </script>
 
-<iframe title="Itch Embed" height="167" frameborder="0" src={iframeSrc} width="552">
-</iframe>
+<div class="">
+	<iframe
+		title="Itch Embed"
+		width="552"
+		height="167"
+		frameborder="0"
+		src={iframeSrc}
+	>
+	</iframe>
+</div>
