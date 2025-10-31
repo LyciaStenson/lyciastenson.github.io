@@ -42,5 +42,9 @@
 		</ul>
 	</div>
 	
+	<p class="text-lg">
+		I also built the Stance Change system, where the inputs change throughout the song, starting with D-Pad and changing to Face Buttons, Bumpes/Triggers, and finally all inputs.
+	</p>
+	
 	<ItchEmbed gameId="3577174" />
 </div>
