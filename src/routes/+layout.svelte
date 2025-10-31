@@ -13,7 +13,9 @@
 	</header>
 	
 	<main class="flex-1">
-		{@render children()}
+		<div class="max-w-7xl mx-auto w-full px-4">
+			{@render children()}
+		</div>
 	</main>
 	
 	<footer class="border-t-2 border-stone-400 text-center p-4">
