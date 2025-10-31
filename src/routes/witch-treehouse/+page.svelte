@@ -1,6 +1,6 @@
 <title>Witch Treehouse Diorama | Lycia Stenson</title>
 
-<div class="px-18 py-14 space-y-5">
+<div class="p-8 md:px-18 md:py-14 space-y-5">
 	<h1 class="text-5xl font-bold">
 		Witch Treehouse Diorama
 	</h1>
