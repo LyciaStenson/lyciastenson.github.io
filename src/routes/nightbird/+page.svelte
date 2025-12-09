@@ -53,6 +53,9 @@
 			<p class="text-lg">
 				Scenes created in the editor can be saved and loaded in the game.
 			</p>
+			<p class="text-lg">
+				Models are serialised with only the path to the .glb file, and the hierarchy is recreated upon loading the scene.
+			</p>
 		</div>
 	</div>
 	
