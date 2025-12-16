@@ -30,7 +30,7 @@
 	
 	<div class="space-y-2">
 		<h2 class="text-4xl font-bold">
-			Project System
+			Projects
 		</h2>
 		
 		<div class="space-y-1">
@@ -39,14 +39,18 @@
 			</p>
 			
 			<p class="text-lg">
-				This is implemented using RTTR &lpar;Run Time Type Reflection&rpar; using the library&apos;s macros for users to register their types.
+				This is implemented using
+				<a href="https://www.rttr.org/" class="font-semibold">
+					RTTR &lpar;Run Time Type Reflection&rpar;
+				</a>
+				using the library&apos;s macros for users to register their types.
 			</p>
 		</div>
 	</div>
 	
 	<div class="space-y-2">
 		<h2 class="text-4xl font-bold">
-			Scene
+			Scenes
 		</h2>
 		
 		<div class="space-y-1">
@@ -58,7 +62,49 @@
 			</p>
 		</div>
 	</div>
+
+	<div class="space-y-2">
+		<h2 class="text-4xl font-bold">
+			App
+		</h2>
+		
+		<div class="space-y-1">
+			<p class="text-lg">
+				The Nightbird App is the executable where simulation is enabled, and the scene is rendered from the scene's Main Camera directly to the swap chain framebuffer.
+			</p>
+		</div>
+	</div>
 	
+	<div class="space-y-2">
+		<h2 class="text-4xl font-bold">
+			Editor
+		</h2>
+		
+		<div class="space-y-1">
+			<p class="text-lg">
+				The Nightbird editor is implemented using
+				<a href="https://github.com/ocornut/imgui" class="font-semibold">
+					Dear ImGui.
+				</a>
+			</p>
+			
+			<div class="space-y-0">
+				<p class="text-lg">
+					The editor features various windows:
+				</p>
+				<ul class="list-disc pl-8 space-y-1">
+					<li>Scene Outliner - Displays the objects in the scene in a reparentable hierarchy</li>
+					<li>Inspector - Displays serialised properties of the selected object</li>
+					<li>Asset Browser - Browse folders and files contained within the Assets folder. Double-click on a scene to open it.</li>
+					<li>Scene - Render and traverse the 3D scene from the perspective of the Editor Camera.</li>
+				</ul>
+				<p class="text-lg">
+					A Game window is planned where the scene will be rendered from the main camera, as in the App.
+				</p>
+			</div>
+		</div>
+	</div>
+
 	<div class="space-y-2">
 		<h2 class="text-4xl font-bold">
 			Vulkan Renderer
