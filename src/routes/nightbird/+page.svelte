@@ -6,7 +6,7 @@
 	</h1>
 	
 	<p class="text-lg">
-		Nightbird is my custom C++ game engine with Vulkan rendering.
+		Nightbird is my cross-platform C++ game engine with Vulkan rendering, tested on Windows 10 &amp; 11 and Fedora Linux 43.
 	</p>
 	
 	<a
@@ -30,12 +30,36 @@
 	
 	<div class="space-y-2">
 		<h2 class="text-4xl font-bold">
+			Build System
+		</h2>
+		
+		<div class="space-y-1">
+			<p class="text-lg">
+				<a href="https://premake.github.io/" class="font-semibold">
+					Premake 5
+				</a>
+				is used to generate platform-specific build files.
+			</p>
+			<div class="space-y-0">
+				<p class="text-lg">
+					Tested Platforms:
+				</p>
+				<ul class="list-disc pl-8 space-y-1 text-lg">
+					<li>Windows 10 &amp; 11 - Visual Studio 2022 &amp; 2026</li>
+					<li>Linux &lpar;Tested on Fedora 43&rpar; - Make &amp; GCC</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="space-y-2">
+		<h2 class="text-4xl font-bold">
 			Projects
 		</h2>
 		
 		<div class="space-y-1">
 			<p class="text-lg">
-				Nightbird uses a shared library project system. The user's project code including custom object types are compiled as a DLL which is then loaded at runtime by the editor or app. Custom scene objects are listed along with built-in types in the editor with custom functionality when added to the scene.
+				Project code containing custom object types is compiled as a shared library and loaded at runtime. These types are displayed alongside built-in objects in the editor, with custom properties exposed in the inspector and custom behaviour during simulation.
 			</p>
 			
 			<p class="text-lg">
@@ -92,7 +116,7 @@
 				<p class="text-lg">
 					The editor features various windows:
 				</p>
-				<ul class="list-disc pl-8 space-y-1">
+				<ul class="list-disc pl-8 space-y-1 text-lg">
 					<li>Scene Outliner - Displays the objects in the scene in a reparentable hierarchy</li>
 					<li>Inspector - Displays serialised properties of the selected object</li>
 					<li>Asset Browser - Browse folders and files contained within the Assets folder. Double-click on a scene to open it.</li>
