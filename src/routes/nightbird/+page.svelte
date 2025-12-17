@@ -6,7 +6,7 @@
 	</h1>
 	
 	<p class="text-lg">
-		Nightbird is my cross-platform C++ game engine with Vulkan rendering, tested on Windows 10 &amp; 11 and Fedora Linux 43.
+		Nightbird is my cross-platform C++ game engine with Vulkan rendering, supporting Windows and Linux with potential future macOS support.
 	</p>
 	
 	<a
@@ -51,7 +51,7 @@
 			</div>
 		</div>
 	</div>
-
+	
 	<div class="space-y-2">
 		<h2 class="text-4xl font-bold">
 			Projects

@@ -14,6 +14,6 @@
 	</p>
 	
 	<p class="text-lg">
-		As the primary programmer on the team, I am building a C++ character tailored to the feel envisioned by the game designers.
+		As one of two programmers on the team, I am building the C++ base for the character to achieve the tailored movement feel envisioned by the game designers.
 	</p>
 </div>
