@@ -23,30 +23,55 @@
 	</a>
 	
 	<p class="text-lg">
-		This project started as an OpenGL renderer to develop my understanding of graphics programming. The project developed into my own game engine. I migrated to Vulkan and further developed its capabilities such as the scene editor and project system.
+		Started as an OpenGL renderer to develop my understanding of graphics programming, the project became my own game engine. I migrated to Vulkan.
 	</p>
 	
-	<img src="/nightbird/editor.png" width="600" alt="Portal issue" />
+	<img src="/nightbird/editor.png" width="600" alt="Nightbird Editor" />
 	
 	<div class="space-y-2">
 		<h2 class="text-4xl font-bold">
-			Build System
+			Cross-Platform
 		</h2>
 		
 		<div class="space-y-1">
 			<p class="text-lg">
-				<a href="https://premake.github.io/" class="font-semibold">
-					Premake 5
-				</a>
-				is used to generate platform-specific build files.
+				A backend system allows platform and rendering functionality to be implemented for different platforms.
 			</p>
 			<div class="space-y-0">
-				<p class="text-lg">
-					Tested Platforms:
+				<p class="text-lg font-semibold">
+					Tested Environments:
 				</p>
 				<ul class="list-disc pl-8 space-y-1 text-lg">
-					<li>Windows 10 &amp; 11 - Visual Studio 2022 &amp; 2026</li>
-					<li>Linux &lpar;Tested on Fedora 43&rpar; - Make &amp; GCC</li>
+					<li>
+						Windows 10 &amp; 11 - Visual Studio 2022
+						<a href="https://premake.github.io/" target="_blank" class="italic">
+							&lpar;Premake&rpar;
+						</a>
+					</li>
+					<li>
+						Linux - Make &amp; GCC
+						<a href="https://premake.github.io/" target="_blank" class="italic">
+							&lpar;Premake&rpar;
+						</a>
+					</li>
+					<li>
+						Nintendo Wii U - devkitPro
+						<a href="https://github.com/devkitPro/wut" target="_blank" class="italic">
+							&lpar;wut&rpar;
+						</a>,
+						<a href="https://github.com/Exzap/CafeGLSL" target="_blank" class="italic">
+							&lpar;CafeGLSL&rpar;
+						</a>,
+					</li>
+					<li>
+						Nintendo 3DS - devkitPro
+						<a href="https://github.com/devkitPro/libctru" target="_blank" class="italic">
+							&lpar;libctru&rpar;
+						</a>,
+						<a href="https://github.com/devkitPro/citro3d" target="_blank" class="italic">
+							&lpar;citro3d&rpar;
+						</a>
+					</li>
 				</ul>
 			</div>
 		</div>
