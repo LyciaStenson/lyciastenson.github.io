@@ -100,7 +100,7 @@
 		
 		<div class="space-y-1">
 			<p class="text-lg">
-				Nightbird was originally designed around runtime type reflection and dynamically loaded projects. This approach was great for the editor, but unsuitable for the app especially on the new platform targets. The functionality is planned to be reimplemented for the new editor, while the app will remain statically compiles.
+				Nightbird was originally designed around runtime type reflection and dynamically loaded projects. This approach was great for the editor, but unsuitable for the app especially on the new platform targets. The functionality is planned to be reimplemented for the new editor, while the app will remain statically compiled.
 			</p>
 			<p class="text-lg">
 				Project code containing custom object types was compiled as a shared library and loaded at runtime. These types were then displayed alongside built-in objects in the editor, with custom properties exposed in the inspector and custom behaviour during simulation.

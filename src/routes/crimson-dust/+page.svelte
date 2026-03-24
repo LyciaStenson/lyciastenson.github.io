@@ -14,6 +14,6 @@
 	</p>
 	
 	<p class="text-lg">
-		As one of two programmers on the team, I am building the C++ base for the character to achieve the tailored movement feel envisioned by the game designers.
+		I worked closely with the designers to implement the tailored character movement and modular combat action system needed to bring the game vision to life.
 	</p>
 </div>
