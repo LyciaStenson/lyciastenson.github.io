@@ -61,7 +61,15 @@
 						</a>,
 						<a href="https://github.com/Exzap/CafeGLSL" target="_blank" class="italic">
 							&lpar;CafeGLSL&rpar;
-						</a>,
+						</a>
+						<ul class="list-disc pl-8 space-y-1 text-lg">
+							<li>
+								Tested in
+								<a href="https://cemu.info/" target="_blank" class="italic">
+									Cemu
+								</a> emulator
+							</li>
+						</ul>
 					</li>
 					<li>
 						Nintendo 3DS - devkitPro
@@ -71,6 +79,14 @@
 						<a href="https://github.com/devkitPro/citro3d" target="_blank" class="italic">
 							&lpar;citro3d&rpar;
 						</a>
+						<ul class="list-disc pl-8 space-y-1 text-lg">
+							<li>
+								Tested in
+								<a href="https://azahar-emu.org/" target="_blank" class="italic">
+									Azahar
+								</a> emulator and on real hardware
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</div>
