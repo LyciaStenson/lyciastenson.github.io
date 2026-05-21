@@ -6,7 +6,7 @@
 	My Gameplay Programming Projects
 </h1>
 
-<div class="flex flex-wrap justify-center gap-4">
+<div class="flex flex-wrap justify-center gap-3">
 	<ProjectCard title="Crimson Dust" description="A hack-n-slash power fantasy set in a gothic-western reimagining of the afterlife." backgroundImage="/crimson-dust/thumbnail.jpg" logos={["/logos/unreal.svg", "/logos/cpp.svg"]} link="/crimson-dust" />
 	<ProjectCard title="Dance Brawler" description="A rhythm game disguised as a fighting game." backgroundImage="/dance-brawler/thumbnail.jpg" logos={["/logos/unity.svg", "/logos/csharp.svg"]} link="/dance-brawler" />
 	<ProjectCard title="Game Feel Demo" description="Super Mario-inspired platformer." backgroundImage="/game-feel-demo/thumbnail.jpg" logos={["/logos/godot.svg"]} link="/game-feel-demo" />
