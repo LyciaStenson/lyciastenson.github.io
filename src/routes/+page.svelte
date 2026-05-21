@@ -14,7 +14,7 @@
 		</p>
 		
 		<p class="text-xl">
-			Which of my projects would you like to see?
+			Which projects would you like to see?
 		</p>
 	</div>
 	
@@ -24,7 +24,7 @@
 	</div>
 	
 	<p class="text-xl">
-		Or take a look at them all below.
+		Or see all projects below.
 	</p>
 
 	<GameplayProjects />
