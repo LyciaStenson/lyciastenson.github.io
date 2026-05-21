@@ -38,6 +38,6 @@
 	</main>
 	
 	<footer class="border-t-2 border-stone-400 text-center p-4">
-		<h1>&copy; 2025 Lycia Stenson</h1>
+		<h1>&copy; 2026 Lycia Stenson</h1>
 	</footer>
 </div>
