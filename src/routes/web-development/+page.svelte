@@ -7,7 +7,7 @@
 	
 	<div class="space-y-3">
 		<p class="text-lg">
-			Having some past experience with NextJS, I decided to build my portfolio website using SvelteKit.
+			Having some past experience with NextJS, I decided to build this portfolio website using SvelteKit.
 		</p>
 		
 		<p class="text-lg">
@@ -15,7 +15,7 @@
 		</p>
 		
 		<p class="text-lg">
-			I built the website for Nightbird Engine. Also using SvelteKit, the Nightbird website allowed me to develop skills designing websites with a modern appearance.
+			The Nightbird website was also built using SvelteKit, where I built a simple blog system.
 		</p>
 	</div>
 </div>
