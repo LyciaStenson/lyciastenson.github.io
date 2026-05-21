@@ -6,10 +6,10 @@
 <style>
 	@keyframes pulse-strong {
 		0%, 100% {
-			opacity: 0.05;
+			opacity: 0.1;
 		}
 		50% {
-			opacity: 0.1;
+			opacity: 0.2;
 		}
 	}
 	.animate-pulse-strong {
@@ -19,7 +19,7 @@
 
 <div class="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
 	<div
-		class="absolute w-[60vw] h-[60vw] bg-linear-to-r from-purple-900 via-pink-600 to-purple-700 rounded-full blur-3xl animate-pulse-strong"
+		class="absolute w-[60vw] h-[60vw] bg-linear-to-r from-purple-700/70 via-pink-600/70 to-purple-600/70 rounded-full blur-3xl animate-pulse-strong"
 		style="top: 10%; left: 20%;">
 	</div>
 </div>
@@ -38,6 +38,6 @@
 	</main>
 	
 	<footer class="border-t-2 border-stone-400 text-center p-4">
-		<h1>&copy; 2026 Lycia Stenson</h1>
+		<h1>&copy; 2026 Lycia Stenson. All rights reserved.</h1>
 	</footer>
 </div>

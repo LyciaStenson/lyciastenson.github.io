@@ -4,9 +4,14 @@
 	<h1 class="text-5xl font-bold">
 		Nightbird Engine
 	</h1>
+
+	<img src="/nightbird/editor.png" width="600" alt="Nightbird Editor" />
 	
 	<p class="text-lg">
-		Nightbird is my cross-platform C++ game engine with Vulkan rendering on Windows and Linux, alongside Wii U and 3DS support.
+		<a href="https://nightbirdengine.github.io/" target="_blank" class="underline underline-offset-2 hover:text-violet-600 dark:hover:text-violet-300 transition-colors">
+			Nightbird
+		</a>
+		is my cross-platform C++ game engine with Vulkan rendering on Windows and Linux, alongside Wii U and 3DS support.
 	</p>
 	
 	<a
@@ -26,10 +31,8 @@
 		Nightbird started as an OpenGL renderer to develop my understanding of graphics programming, the project became my own game engine.
 	</p>
 	
-	<img src="/nightbird/editor.png" width="600" alt="Nightbird Editor" />
-	
 	<p class="text-lg">
-		I migrated to Vulkan, and later made the decision to abtract platform-specifics behind backend interfaces allowing for Wii U and 3DS support. I chose the Wii U and 3DS as they were my childhood game consoles, and they have good homebrew support through devkitPro.
+		I migrated to Vulkan, and later abtracted platform-specifics behind backend interfaces allowing for Wii U and 3DS support. I chose the Wii U and 3DS as they were my childhood game consoles, and they have good homebrew support through devkitPro.
 	</p>
 	
 	<div class="space-y-2">

@@ -3,7 +3,7 @@
 </script>
 
 <h1 class="text-3xl font-bold">
-	My Engine and Graphics Programming Projects
+	My Engine &amp; Graphics Programming Projects
 </h1>
 
 <div class="flex flex-wrap justify-center gap-4">

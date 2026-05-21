@@ -20,7 +20,7 @@
 	
 	<div class="flex flex-wrap justify-center gap-4">
 		<CategoryCard title="Gameplay Programming" link="/gameplay-programming" />
-		<CategoryCard title="Engine & Graphics Programming" link="/engine-programming" />
+		<CategoryCard title="Engine &amp; Graphics Programming" link="/engine-programming" />
 	</div>
 	
 	<p class="text-xl">
