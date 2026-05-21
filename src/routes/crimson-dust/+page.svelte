@@ -10,7 +10,7 @@
 	</p>
 	
 	<p>
-		<a class="underline underline-offset-2 hover:text-red-600 dark:hover:text-red-400 transition-colors" href="https://evilbeangames.com/">
+		<a href="https://evilbeangames.com/" target="_blank" class="underline underline-offset-2 hover:text-red-600 dark:hover:text-red-400 transition-colors">
 			Evil Bean Games
 		</a>
 		is a multidisciplinary volunteer indie team, based in the UK with global team members.
