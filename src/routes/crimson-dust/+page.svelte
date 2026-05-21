@@ -9,6 +9,10 @@
 		Crimson Dust is a hack-n-slash power fantasy set in a gothic-western reimagining of the afterlife, where fluid fighting game controls let you tear through the damned in brutal, relentless style.
 	</p>
 	
+	<div class="lg:h-152 w-full overflow-hidden">
+		<img src="crimson-dust/thumbnail.jpg" alt="Cassian" class="h-full w-full object-cover object-top" />
+	</div>
+	
 	<p>
 		<a href="https://evilbeangames.com/" target="_blank" class="underline underline-offset-2 hover:text-red-600 dark:hover:text-red-400 transition-colors">
 			Evil Bean Games
