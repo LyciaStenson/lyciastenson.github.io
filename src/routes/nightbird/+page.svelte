@@ -6,7 +6,7 @@
 	</h1>
 	
 	<p class="text-lg">
-		Nightbird is my cross-platform C++ game engine with Vulkan rendering. Windows and Linux .
+		Nightbird is my cross-platform C++ game engine with Vulkan rendering on Windows and Linux, alongside Wii U and 3DS support.
 	</p>
 	
 	<a
@@ -23,10 +23,14 @@
 	</a>
 	
 	<p class="text-lg">
-		Started as an OpenGL renderer to develop my understanding of graphics programming, the project became my own game engine. I migrated to Vulkan.
+		Nightbird started as an OpenGL renderer to develop my understanding of graphics programming, the project became my own game engine.
 	</p>
 	
 	<img src="/nightbird/editor.png" width="600" alt="Nightbird Editor" />
+	
+	<p class="text-lg">
+		I migrated to Vulkan, and later made the decision to abtract platform-specifics behind backend interfaces allowing for Wii U and 3DS support. I chose the Wii U and 3DS as they were my childhood game consoles, and they have good homebrew support through devkitPro.
+	</p>
 	
 	<div class="space-y-2">
 		<h2 class="text-4xl font-bold">
@@ -100,10 +104,10 @@
 		
 		<div class="space-y-1">
 			<p class="text-lg">
-				Nightbird was originally designed around runtime type reflection and dynamically loaded projects. This approach was great for the editor, but unsuitable for the app especially on the new platform targets. The functionality is planned to be reimplemented for the new editor, while the app will remain statically compiled.
+				Nightbird features a custom type reflection system which does not require RTTI, and functions across all platforms. This allows for core and custom object types to be added to scenes, their fields to be set, and then cooked to platform-specific binary scene formats.
 			</p>
 			<p class="text-lg">
-				Project code containing custom object types was compiled as a shared library and loaded at runtime. These types were then displayed alongside built-in objects in the editor, with custom properties exposed in the inspector and custom behaviour during simulation.
+				On the desktop, the user&apos;s project can be compiled in two main ways&colon; As a shared library loaded by the editor at runtime, or as a standalone executable. On Wii U and 3DS the project is always compiled statically.
 			</p>
 		</div>
 	</div>
