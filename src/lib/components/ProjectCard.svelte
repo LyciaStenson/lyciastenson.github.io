@@ -8,7 +8,7 @@
 </script>
 
 <a
-	class="group relative overflow-hidden flex flex-col justify-end p-2 w-full md:w-76 min-h-98 border-2 border-black dark:border-stone-400 text-black dark:text-white rounded-lg hover:shadow-lg"
+	class="group relative overflow-hidden flex flex-col justify-end p-2 w-full md:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.667rem)] xl:w-[calc(25%-0.75rem)] min-h-98 border-2 border-black dark:border-stone-400 text-black dark:text-white rounded-lg hover:shadow-lg"
 	href={link}
 >
 	<div
@@ -16,7 +16,7 @@
 		style="background-image: {backgroundImage ? `url(${backgroundImage})` : 'none'}"
 	></div>
 	
-	<div class="absolute inset-0 bg-black/15 dark:bg-black/30 transition-opacity duration-50 group-hover:opacity-0"></div>
+	<div class="absolute inset-0 bg-black/10 dark:bg-black/10 transition-opacity duration-50 group-hover:opacity-0"></div>
 
 	{#if logos.length > 0}
 	<div class="absolute top-2 left-2 flex gap-2 z-20 p-1 rounded-md bg-white/65 dark:bg-black/65">

@@ -12,20 +12,12 @@
 		<p class="text-xl">
 			Hi, I'm a graduate game programmer focused on gameplay, graphics, and engine programming. I enjoy investigating problems and developing efficient solutions that improve designers&apos; workflows. I have experience in Unreal, Unity, and Godot, and I'm currently building a custom engine in C++ with Vulkan.
 		</p>
-		
-		<p class="text-xl">
-			Which projects would you like to see?
-		</p>
 	</div>
 	
-	<div class="flex flex-wrap justify-center gap-4">
+	<div class="flex flex-wrap justify-center gap-6">
 		<CategoryCard title="Gameplay Programming" link="/gameplay-programming" />
 		<CategoryCard title="Engine &amp; Graphics Programming" link="/engine-programming" />
 	</div>
-	
-	<p class="text-xl">
-		Or see all projects below.
-	</p>
 
 	<GameplayProjects />
 	<EngineProjects />

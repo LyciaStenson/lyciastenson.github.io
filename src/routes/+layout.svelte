@@ -25,7 +25,7 @@
 </div>
 
 <div class="flex flex-col min-h-screen text-black dark:text-white">
-	<header class="sticky top-0 z-50 text-lg p-6 border-b-2 border-stone-400 bg-white dark:bg-stone-950">
+	<header class="sticky top-0 z-50 text-lg p-6 border-b-2 border-stone-400 bg-white dark:bg-black">
 		<h1>
 			<a href="/">
 				Lycia Stenson | Game Programmer
@@ -33,7 +33,7 @@
 		</h1>
 	</header>
 	
-	<main class="flex-1 p-4 sm:p-8 md:px-14 md:py-14 max-w-360 mx-auto">
+	<main class="flex-1 p-4 sm:p-8 md:p-6 max-w-360 mx-auto">
 		{@render children()}
 	</main>
 	
