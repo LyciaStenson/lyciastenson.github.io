@@ -37,7 +37,7 @@
 		{@render children()}
 	</main>
 	
-	<footer class="border-t-2 border-stone-400 text-center p-4">
+	<footer class="p-4 text-center border-t-2 border-stone-400">
 		<h1>&copy; 2026 Lycia Stenson. All rights reserved.</h1>
 	</footer>
 </div>
