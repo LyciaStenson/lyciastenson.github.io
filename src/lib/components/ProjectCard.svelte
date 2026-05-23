@@ -8,7 +8,7 @@
 </script>
 
 <a
-	class="group relative overflow-hidden flex flex-col justify-end p-2 w-full md:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.667rem)] xl:w-[calc(25%-0.75rem)] min-h-98 border-2 border-black dark:border-stone-400 text-black dark:text-white rounded-lg hover:shadow-lg"
+	class="group relative overflow-hidden flex flex-col justify-end p-2 w-full md:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.667rem)] xl:w-[calc(25%-0.75rem)] min-h-98 border-2 border-stone-800 dark:border-stone-400 text-black dark:text-white rounded-lg hover:shadow-lg"
 	href={link}
 >
 	<div

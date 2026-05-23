@@ -25,7 +25,7 @@
 </div>
 
 <div class="flex flex-col min-h-screen text-black dark:text-white">
-	<header class="sticky top-0 z-50 text-lg p-6 border-b-2 border-stone-400 bg-white dark:bg-black">
+	<header class="sticky top-0 z-50 text-lg p-6 border-b-2 border-stone-800 dark:border-stone-400 bg-white dark:bg-black">
 		<h1>
 			<a href="/">
 				Lycia Stenson | Game Programmer
@@ -37,7 +37,7 @@
 		{@render children()}
 	</main>
 	
-	<footer class="p-4 text-center border-t-2 border-stone-400">
+	<footer class="p-4 text-center border-t-2 border-stone-800 dark:border-stone-400">
 		<h1>&copy; 2026 Lycia Stenson. All rights reserved.</h1>
 	</footer>
 </div>
