@@ -14,7 +14,7 @@
 		</p>
 	</div>
 	
-	<div class="flex flex-wrap justify-center gap-6">
+	<div class="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-6">
 		<CategoryCard title="Gameplay Programming" link="/gameplay-programming" />
 		<CategoryCard title="Engine &amp; Graphics Programming" link="/engine-programming" />
 	</div>

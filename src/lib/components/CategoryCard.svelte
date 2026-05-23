@@ -4,7 +4,7 @@
 </script>
 
 <a
-	class="flex xl:flex-1 w-full h-20 justify-center items-center text-center border-2 rounded-xl hover:shadow-lg duration-100 hover:scale-103"
+	class="flex xl:flex-1 w-full h-20 p-2 justify-center items-center text-center border-2 rounded-xl hover:shadow-lg duration-100 hover:scale-103"
 	href={link}
 >
 	<h2 class="text-3xl font-bold">
