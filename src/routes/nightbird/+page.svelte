@@ -26,13 +26,9 @@
 			<img src="/logos/github-text.svg" alt="GitHub Icon" class="h-6 dark:invert"/>
 		</div>
 	</a>
-
+	
 	<p class="text-lg">
-		Nightbird started as an OpenGL renderer to develop my understanding of graphics programming, the project became my own game engine.
-	</p>
-
-	<p class="text-lg">
-		I migrated to Vulkan, and later abtracted platform-specifics behind backend interfaces allowing for Wii U and 3DS support. I chose the Wii U and 3DS as they were my childhood game consoles, and they have good homebrew support through devkitPro.
+		After building an initial OpenGL renderer, I migrated to Vulkan to gain a deeper understanding of modern graphics pipelines. OpenGL abstracts a lot of what is really going on, and Vulkan felt like the natural progression as the modern open standard. I later abstracted platform-specifics behind backend interfaces allowing for Wii U and 3DS support. I wanted to challenge myself to get 3D rendering working on platforms significantly more constrained in processing and memory than modern PCs, so I chose my childhood consoles which have good homebrew support through devkitPro.
 	</p>
 
 	<div class="space-y-2">
