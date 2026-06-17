@@ -15,12 +15,12 @@
 	</div>
 	
 	<div class="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-6">
-		<CategoryCard title="Gameplay Programming" link="/gameplay-programming" />
 		<CategoryCard title="Engine &amp; Graphics Programming" link="/engine-programming" />
+		<CategoryCard title="Gameplay Programming" link="/gameplay-programming" />
 	</div>
-
-	<GameplayProjects />
+	
 	<EngineProjects />
+	<GameplayProjects />
 	
 	<h1 class="text-3xl font-bold">
 		My Other Projects
