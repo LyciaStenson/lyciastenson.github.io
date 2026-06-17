@@ -26,138 +26,105 @@
 			<img src="/logos/github-text.svg" alt="GitHub Icon" class="h-6 dark:invert"/>
 		</div>
 	</a>
-	
+
 	<p class="text-lg">
 		After building an initial OpenGL renderer, I migrated to Vulkan to gain a deeper understanding of modern graphics pipelines. OpenGL abstracts a lot of what is really going on, and Vulkan felt like the natural progression as the modern open standard. I later abstracted platform-specifics behind backend interfaces allowing for Wii U and 3DS support. I wanted to challenge myself to get 3D rendering working on platforms significantly more constrained in processing and memory than modern PCs, so I chose my childhood consoles which have good homebrew support through devkitPro.
 	</p>
 
-	<div class="space-y-2">
-		<h2 class="text-4xl font-bold">
-			Platforms
-		</h2>
+	<p class="text-lg">
+		On the desktop, a user&apos;s project can be compiled as a shared library loaded by the editor at runtime, or as a standalone executable. For Wii U and 3DS, the project is always compiled statically.
+	</p>
 
-		<div class="space-y-1">
-			<p class="text-lg">
-				A backend system allows platform and rendering functionality to be implemented for different platforms.
-			</p>
-			<div class="space-y-0">
-				<p class="text-lg font-semibold">
-					Tested Environments:
-				</p>
-				<ul class="list-disc pl-8 space-y-1 text-lg">
-					<li>
-						Windows 10 &amp; 11 - Visual Studio 2022
-						<a href="https://premake.github.io/" target="_blank" class="italic">
-							&lpar;Premake&rpar;
-						</a>
-					</li>
-					<li>
-						Linux - Make &amp; GCC
-						<a href="https://premake.github.io/" target="_blank" class="italic">
-							&lpar;Premake&rpar;
-						</a>
-					</li>
-					<li>
-						Nintendo Wii U - devkitPro
-						<a href="https://github.com/devkitPro/wut" target="_blank" class="italic">
-							&lpar;wut&rpar;
-						</a>,
-						<a href="https://github.com/Exzap/CafeGLSL" target="_blank" class="italic">
-							&lpar;CafeGLSL&rpar;
-						</a>
-						<ul class="list-disc pl-8 space-y-1 text-lg">
-							<li>
-								Tested in the
-								<a href="https://cemu.info/" target="_blank" class="italic">
-									Cemu
-								</a> emulator
-							</li>
-						</ul>
-					</li>
-					<li>
-						Nintendo 3DS - devkitPro
-						<a href="https://github.com/devkitPro/libctru" target="_blank" class="italic">
-							&lpar;libctru&rpar;
-						</a>,
-						<a href="https://github.com/devkitPro/citro3d" target="_blank" class="italic">
-							&lpar;citro3d&rpar;
-						</a>
-						<ul class="list-disc pl-8 space-y-1 text-lg">
-							<li>
-								Tested on real hardware and in the
-								<a href="https://azahar-emu.org/" target="_blank" class="italic">
-									Azahar
-								</a> emulator
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-		</div>
+	<h2 class="text-4xl font-bold">
+		Reflection
+	</h2>
+	<p class="text-lg">
+		Initially the editor used RTTR, an existing C++ reflection library, but it was unsuitable for the app since it relied on RTTI. This was especially the case on platforms like the Nintendo 3DS. Rather than maintain two separate reflection systems, I replaced RTTR entirely with a custom unified system that handles both field editing in the editor and binary scene loading in the app. This system handles type registration, field inspection via memory offsets, FNV hash-based type lookup, and runtime object instantiation.
+	</p>
+
+	<h2 class="text-4xl font-bold">
+		Editor
+	</h2>
+	<div class="space-y-1">
+		<p class="text-lg">
+			The Nightbird Editor uses
+			<a href="https://github.com/ocornut/imgui" class="italic">
+				Dear ImGui
+			</a>
+			for its UI with the following windows:
+		</p>
+		<ul class="list-disc pl-8 space-y-1 text-lg">
+			<li>Scene Outliner: Displays the objects in the scene in a reparentable hierarchy.</li>
+			<li>Inspector: Displays editable serialised fields of the selected object or asset.</li>
+			<li>Asset Browser: Browse folders and files within the Assets folder. Double-click on a scene to open it.</li>
+			<li>Scene: Render and traverse the 3D scene from the perspective of the editor camera.</li>
+		</ul>
 	</div>
 
-	<div class="space-y-2">
-		<h2 class="text-4xl font-bold">
-			Architecture
-		</h2>
+	<h2 class="text-4xl font-bold">
+		Asset Cooking
+	</h2>
+	<p class="text-lg">
+		Nightbird uses a two-stage pipeline for all assets. Scenes are saved by the editor as .ntscene files &lpar;Nightbird Text, TOML&rpar;, then cooked into .nbscene &lpar;Nightbird Binary&rpar; for runtime. Other assets are imported from source formats &lpar;.glb for meshes, .hdr for cubemaps, .flac and .wav for audio&rpar; and cooked into binary container formats &lpar;.nbmesh, .nbmaterial, .nbtexture, .nbaudio&rpar;.
+	</p>
+	<p class="text-lg">
+		Cooking is platform-aware. On desktop, textures are currently stored as raw RGBA and audio as PCM. On Wii U, assets are byte-swapped at cook time, keeping load times down on the target platform. On 3DS, textures and audio are cooked into platform-native formats using tex3ds and VGAudioCli. Compressed format support for desktop and Wii U is planned.
+	</p>
 
-		<div class="space-y-1">
-			<p class="text-lg">
-				Nightbird features a custom type reflection system which does not require RTTI, and functions across all platforms. This allows for core and custom object types to be added to scenes, their fields to be set, and then cooked to platform-specific binary scene formats.
-			</p>
-			<p class="text-lg">
-				On the desktop, the user&apos;s project can be compiled in two main ways&colon; As a shared library loaded by the editor at runtime, or as a standalone executable. On Wii U and 3DS the project is always compiled statically.
-			</p>
-		</div>
-	</div>
-
-	<div class="space-y-2">
-		<h2 class="text-4xl font-bold">
-			App
-		</h2>
-
-		<div class="space-y-1">
-			<p class="text-lg">
-				The app is the executable deployed to the target platform, loading cooked assets generated by the editor.
-			</p>
-			<p class="text-lg">
-				The input provider interface is implemented for all platforms, with audio provider implementations currently in progress.
-			</p>
-		</div>
-	</div>
-
-	<div class="space-y-2">
-		<h2 class="text-4xl font-bold">
-			Editor
-		</h2>
-
-		<div class="space-y-1">
-			<p class="text-lg">
-				The Nightbird Editor provides utility functions for importing assets from source formats &lpar;e.g., <span class="italic">.glb</span>, <span class="italic">.flac</span>&rpar; and cooking them into containers &lpar;e.g., .nbtexture, .nbaudio&rpar;. When cooking for the Nintendo 3DS, this uses the platform-specific formats t3x for textures and DSP-ADPCM for audio.
-			</p>
-
-			<p class="text-lg">
-				The previous version of the editor used
-				<a href="https://github.com/ocornut/imgui" class="italic">
-					Dear ImGui
+	<h2 class="text-4xl font-bold">
+		Platforms
+	</h2>
+	<div class="space-y-1">
+		<p class="text-lg font-semibold">
+			Tested Environments:
+		</p>
+		<ul class="list-disc pl-8 space-y-1 text-lg">
+			<li>
+				Windows 10 &amp; 11 - Visual Studio 2022
+				<a href="https://premake.github.io/" target="_blank" class="italic">
+					&lpar;Premake&rpar;
 				</a>
-				for the UI, and this will soon be implemented for the new editor and its new functionality.
-			</p>
-
-			<div class="space-y-0">
-				<p class="text-lg">
-					The previous version of the editor features various windows:
-				</p>
+			</li>
+			<li>
+				Linux - Make &amp; GCC
+				<a href="https://premake.github.io/" target="_blank" class="italic">
+					&lpar;Premake&rpar;
+				</a>
+			</li>
+			<li>
+				Nintendo Wii U - devkitPro
+				<a href="https://github.com/devkitPro/wut" target="_blank" class="italic">
+					&lpar;wut&rpar;
+				</a>,
+				<a href="https://github.com/Exzap/CafeGLSL" target="_blank" class="italic">
+					&lpar;CafeGLSL&rpar;
+				</a>
 				<ul class="list-disc pl-8 space-y-1 text-lg">
-					<li>Scene Outliner - Displays the objects in the scene in a reparentable hierarchy</li>
-					<li>Inspector - Displays serialised properties of the selected object</li>
-					<li>Asset Browser - Browse folders and files contained within the Assets folder. Double-click on a scene to open it.</li>
-					<li>Scene - Render and traverse the 3D scene from the perspective of the Editor Camera.</li>
+					<li>
+						Tested in the
+						<a href="https://cemu.info/" target="_blank" class="italic">
+							Cemu
+						</a> emulator
+					</li>
 				</ul>
-				<p class="text-lg">
-					When editor UI is reimplemented for the new version of the engine, a Game window is planned where the scene will be rendered from the main camera.
-				</p>
-			</div>
-		</div>
+			</li>
+			<li>
+				Nintendo 3DS - devkitPro
+				<a href="https://github.com/devkitPro/libctru" target="_blank" class="italic">
+					&lpar;libctru&rpar;
+				</a>,
+				<a href="https://github.com/devkitPro/citro3d" target="_blank" class="italic">
+					&lpar;citro3d&rpar;
+				</a>
+				<ul class="list-disc pl-8 space-y-1 text-lg">
+					<li>
+						Tested on real hardware and in the
+						<a href="https://azahar-emu.org/" target="_blank" class="italic">
+							Azahar
+						</a> emulator
+					</li>
+				</ul>
+			</li>
+		</ul>
 	</div>
 </div>
