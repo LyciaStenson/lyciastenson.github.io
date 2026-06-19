@@ -29,11 +29,11 @@
 		<CategoryCard title="Engine &amp; Graphics Programming" link="/engine-programming" />
 		<CategoryCard title="Gameplay Programming" link="/gameplay-programming" />
 	</div>
-	
+
 	<h1 class="text-3xl font-bold">
 		My Other Projects
 	</h1>
-	
+
 	<div class="flex flex-wrap justify-center gap-4">
 		<ProjectCard title="Web Development" description="Having some past experience with NextJS, I decided to build my portfolio and the Nightbird website using SvelteKit." backgroundImage="/web-development/thumbnail.jpg" blur={true} logos={["/logos/sveltekit.svg"]} link="/web-development" />
 	</div>
