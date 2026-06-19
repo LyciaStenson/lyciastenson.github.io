@@ -14,13 +14,23 @@
 		</p>
 	</div>
 	
+	<h1 class="text-3xl font-bold">
+		My Favourite Projects
+	</h1>
+
+	<div class="flex flex-wrap justify-center gap-4">
+		<ProjectCard title="Nightbird Engine" description="Cross-platform C++ game engine with desktop Vulkan rendering, alongside Wii U and 3DS support" backgroundImage="/nightbird/thumbnail.jpg" logos={["/logos/cpp.svg", "/logos/vulkan.svg"]} link="/nightbird" />
+		<ProjectCard title="Crimson Dust" description="A hack-n-slash power fantasy set in a gothic-western reimagining of the afterlife." backgroundImage="/crimson-dust/thumbnail.jpg" logos={["/logos/unreal.svg", "/logos/cpp.svg"]} link="/crimson-dust" />
+	</div>
+
+	<h1 class="text-3xl font-bold">
+		All Projects
+	</h1>
+
 	<div class="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-6">
 		<CategoryCard title="Engine &amp; Graphics Programming" link="/engine-programming" />
 		<CategoryCard title="Gameplay Programming" link="/gameplay-programming" />
 	</div>
-	
-	<EngineProjects />
-	<GameplayProjects />
 	
 	<h1 class="text-3xl font-bold">
 		My Other Projects
