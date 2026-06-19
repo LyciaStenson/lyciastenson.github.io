@@ -54,10 +54,11 @@
 			for its UI with the following windows:
 		</p>
 		<ul class="list-disc pl-8 space-y-1 text-lg">
+			<li>Scene View: Render and traverse the scene from the perspective of the editor camera.</li>
+			<li>App View: Render the scene from the perspective of the scene's active camera.</li>
 			<li>Scene Outliner: Displays the objects in the scene in a reparentable hierarchy.</li>
 			<li>Inspector: Displays editable serialised fields of the selected object or asset.</li>
 			<li>Asset Browser: Browse folders and files within the Assets folder. Double-click on a scene to open it.</li>
-			<li>Scene: Render and traverse the 3D scene from the perspective of the editor camera.</li>
 		</ul>
 	</div>
 
