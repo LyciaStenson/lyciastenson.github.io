@@ -1,8 +1,6 @@
 <script lang="ts">
 	import CategoryCard from "$lib/components/CategoryCard.svelte";
 	import ProjectCard from "$lib/components/ProjectCard.svelte";
-	import GameplayProjects from "$lib/components/GameplayProjects.svelte";
-	import EngineProjects from "$lib/components/EngineProjects.svelte";
 </script>
 
 <title>Lycia Stenson | Game Programmer</title>
